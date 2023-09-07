@@ -6,6 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 require('./utility/database');
 const bcrypt = require('bcrypt');
+const cookies = require('cookie-parser');
+app.use(cookies());
+
 const userRoutes = require('./routes/user');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));

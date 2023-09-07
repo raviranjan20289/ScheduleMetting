@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard page </h1>
+    <h2>Hii {{data}} </h2>
+
+ <a href="/api/user/logout">logout</a>
+
+ <br>  <br>
+ <a href="/api/user/myProfile">myProfile</a>
+
+ <br>  <br>
+ <form action="/api/user/searchedUser" method="get">
+  <input type="text" name="search" placeholder="Enter your search query">
+  <button type="submit">Search</button>
+</form>
+
+</body>
+</html>

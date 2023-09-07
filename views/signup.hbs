@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+           <h1>Welcome to Registration page </h1>
+
+
+    
+        
+            <form  action="/api/user/register" method="POST">
+                
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" >
+
+                    <label for="uname">Username</label>
+                    <input type="text" name="Username" >
+                
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" >
+         
+
+                    <label for="password">Password</label>
+                    <input type="password" name="Password" >
+                
+                    <button type="submit" class="btn">Sign up</button>
+          
+                
+            </form>
+       
+  <br> <br>
+<p>Already have an account <a href="/api/user/login">Sign In</a>.</p>
+
+
+    
+
+</body>
+</html>
